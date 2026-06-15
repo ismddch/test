@@ -7,7 +7,7 @@ void main() {
     MaterialApp(
       // Remplacez 'NomDeVotreClasse' par le nom de la classe 
       // qui se trouve dans votre fichier test.dart
-      home: DividerExampleApp(), 
+      home: TestPage(), 
     ),
   );
 }
