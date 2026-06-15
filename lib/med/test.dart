@@ -1,38 +1,18 @@
 import 'package:flutter/material.dart';
 
-/// Flutter code sample for [Divider].
-
-void main() => runApp(const DividerExampleApp());
-
-class DividerExampleApp extends StatelessWidget {
-  const DividerExampleApp({super.key});
+class TestPage extends StatelessWidget {
+  const TestPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(colorSchemeSeed: const Color(0xff6750a4)),
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Divider Sample')),
-        body: const DividerExample(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Page de Test"),
+        backgroundColor: const Color.fromARGB(121, 13, 45, 188),
       ),
-    );
-  }
-}
-
-class DividerExample extends StatelessWidget {
-  const DividerExample({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          children: <Widget>[
-            Expanded(child: Card(child: SizedBox.expand())),
-            Divider(),
-            Expanded(child: Card(child: SizedBox.expand())),
-          ],
+      body: Center(
+        child: Image.network(
+          "https://flutter.dev/assets/homepage/carousel/slide_1-3323049195.png", // Exemple d'URL d'image
         ),
       ),
     );
