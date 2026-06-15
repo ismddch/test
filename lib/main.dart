@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+// Assurez-vous que ce chemin correspond à l'emplacement de votre fichier test.dart
+import 'package:flutter_application_1/med/test.dart'; 
 
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(
-        body: Image.network(""),
-        appBar: AppBar(
-          title: Text("med"),
-          backgroundColor: Color.fromARGB(121, 13, 45, 188)
-          ,),) ),);
+      // Remplacez 'NomDeVotreClasse' par le nom de la classe 
+      // qui se trouve dans votre fichier test.dart
+      home: DividerExampleApp(), 
+    ),
+  );
 }
-
